@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+
+    <style>
+        body{
+            background-color: aliceblue;
+            font-family:'Lucida Sans';
+            background: linear-gradient(aliceblue,powderblue);
+        }
+
+        .form{
+            background-color: powderblue;
+            padding: 20px;
+            width: 450px;
+            height: 250px;
+            margin-left: 30%;
+            margin-top: 10%;
+            transition: .5s ease-in-out;
+            align-items: center;
+            border-radius: 5%;
+            box-shadow: 1px 2px 5px;
+}
+
+        .form:hover{
+            height:270px;
+            background-color: aqua;
+            box-shadow: 2px 8px 15px;
+            transform: rotate(2deg);
+           
+
+        }
+
+        .topheader{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 200;
+        }
+
+        .bottom{
+            align-items: center;
+            text-align: center;
+        }
+
+        button{
+            height: 20px;
+            width: 120px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            margin-top: 10px;
+        }
+
+        input{
+            position: relative;
+            padding-left: 10px;
+            width: 200px;
+            height: 25px;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
+
+        }
+
+        .confirm{
+            background-color: gold;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            transition: 4s ease-in-out;
+            box-shadow: 2px 0px 3px;
+        }
+
+        .confirm:hover{
+            transform: translate(600px,60px) rotate(360deg);
+            background-color: aqua;
+        
+        }
+    </style>
+</head>
+<body>
+    <div id="confirm">
+
+    </div>
+    <form action="#">
+    <div class="form">
+        <div class="top">
+            <h1 class="topheader">
+                Sign Up
+            </h1>
+        
+            <label for="user_name">USer Name: </label><input type="text" id="name">
+            <br>
+            <label for="password">Password: </label><input type="password" required>
+        </div>
+
+        <div class="bottom">
+            <button onclick=submitFunc()>Submit</button>
+            <p>already have an account, <a href="#">Signin</a></p>            
+        </div>
+   
+    </div>
+    </form>
+
+    <script>
+        function submitFunc(){
+            let speech = new SpeechSynthesisUtterance("No Entry Granted");
+            speechSynthesis.speak(speech)
+        }
+    </script>
+</body>
+
+</html>

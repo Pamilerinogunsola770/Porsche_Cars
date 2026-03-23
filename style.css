@@ -1,0 +1,385 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color: white;
+}
+
+body{
+    background-color: black ;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p{
+    font-size: 16px;
+}
+
+i{
+    color: white;
+    font-size: 50px;
+}
+
+a{
+    font-weight: 200;
+    text-decoration: none;
+    transition: .5s;
+
+}
+
+ul{
+    display: block;
+}
+
+li{
+    display: block;
+}
+
+button{
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, orangered,red);
+    color: black;
+    font-weight: 400;
+    border: 1px solid black;
+    transition: .5s;
+    margin-top: 20px;
+
+}
+
+button:hover{
+    transform: scale(.7);
+
+}
+
+input{
+    color: white;
+    height: 25px;
+    background-color: black;
+    width: 500px;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+input:hover{
+    border: 2px solid white;
+
+}
+
+textarea{
+    background-color: black;
+    margin-top: 5px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    width: 500px;
+}
+
+label{
+    color: white;
+}
+
+
+
+a:hover{
+    transform: scale(1.2);
+    color: orangered;
+    
+}
+
+.logo{
+    transform: scale(30%);
+}
+
+.hero-section {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  background-size: cover;
+  display: block;
+  animation: hazy infinite 60s;
+  animation-timing-function: ease-in-out;
+}
+
+.hero-header{
+    width: 100%;
+    height: 20px;
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 250px;
+    margin-top: 70px;
+    float: right;
+}
+
+.hero-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-left{
+    margin-top: 120px;
+    margin-left: 190px;
+    display: block;
+}
+
+#jump-button{
+    transition: 1s;
+    animation: jump 2.1s ease-in-out infinite;
+}
+
+.about-section{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+}
+
+.about-body{
+    margin-left: 90px;
+    margin-top: 20px;
+    padding: 10px;
+    transition: 1s;
+}
+
+.about-body:hover{
+    transform: scale(1.02);
+}
+
+.about-image{
+    padding: 70px;
+    width: 150%;
+    height: 80px;
+    margin-top: 60px;
+    margin-right: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url('haze.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: .7s ease-in;
+}
+
+.about-image:hover{
+    transform: scale(1.03);
+    animation: about-hover 10s;
+}
+
+
+
+.services-section{
+    display: block;
+    background: linear-gradient(rgba(0.5,0.4,0.9), rgba(0, 0, 0, 0));
+    width: 100%;
+    padding: 40px 0; 
+    text-align: center;
+    margin-top: 200px;
+    
+}
+
+
+.services{
+    height: 280px;
+    width: 200px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+
+.services-main{
+    display: flex;
+    justify-content: center;
+    gap: 30px;    
+    text-align: center;
+    padding: 40px 0;   
+    animation: jump 2.2s ease-in infinite ;
+}
+
+
+
+#s1{
+    box-shadow: 0px 2px 0px orangered;
+    transition: 1s;
+ 
+}
+
+#s2{
+    box-shadow: 0px 2px 0px red;
+    transition: 1s;
+
+}
+#s3{
+    box-shadow: 0px 2px 0px blue;
+    transition: 1s;
+}
+
+#s1:hover{
+    box-shadow: 0px .5px 0px orangered;
+    transform: scale(1.08);
+}
+
+#s2:hover{
+    box-shadow: 0px .5px 0px red;
+    transform: scale(1.08);
+}
+
+
+#s3:hover{
+    box-shadow: 0px .5px 0px blue;
+    transform: scale(1.08);
+}
+
+
+
+.card-img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+
+}
+
+#gear{
+    text-shadow: 2px 0px 2px black;
+    animation: rotate 5s ease-in-out infinite alternate-reverse;
+}
+
+.contact-form{
+    background: linear-gradient(rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0.0)), url('red.jpg') no-repeat center center;
+    background-size: cover;
+    height: 550px;
+    width: cover;
+    opacity: 0.7;
+    margin-top: -440px;
+    align-items: center;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.form{
+    height: 400px;
+    width: 600px;
+    position: relative;
+    top: 12%;
+    left: 25%;
+    box-shadow: 4px 2px 3px rgb(14, 7, 0);
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.form:hover{
+    box-shadow: 0px 6px 0px black;
+}
+
+.form-header{
+    text-align: center;
+    color: white;
+}
+
+.form-bottom{
+    color: black;
+}
+
+.footer{
+    height: auto;
+    width: auto;
+    margin-left: 10px;
+    padding: 2%;
+    justify-items: center;
+    background: linear-gradient(rgba(128, 2, 2, .04), rgba(0.5,0.4,0.9));
+}
+
+.top-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column{
+    display: block;
+    margin-top: 50px;
+}
+
+.bottom-footer{
+    left: 25%;
+}
+
+
+
+@keyframes hazy {
+    0%{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('d3.jpg') no-repeat center center;
+        background-size: cover;
+        transition: 0.5s;
+    }
+
+    70%{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('Porsche.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    
+    100%{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('porrshe.jpg') no-repeat center center;
+        background-size: cover;
+    }
+}
+
+@keyframes jump {
+    0%{
+        transform: translate(0px,0px);
+    }
+
+    25%{
+        transform: translate(0px,2px);
+    }
+    
+    50%{
+        transform: translate(0px,4px);
+    }
+
+    75%{
+        transform: translate(0px,2px);
+    }
+
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes about-hover {
+    from{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url('red.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    to{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url('haze.jpg') no-repeat center center;
+        background-size: cover;
+    }
+}
